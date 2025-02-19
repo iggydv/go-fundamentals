@@ -38,7 +38,6 @@ Just a simple repository to build some common datastructures and algorithms from
 - [ ] Radix Sort
 - [ ] Bucket Sort
 - [ ] Topological Sort
-
 - [ ] Breadth First Search
 - [ ] Depth First Search
 - [ ] Z Algorithm
