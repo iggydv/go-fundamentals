@@ -28,11 +28,11 @@ Just a simple repository to build some common datastructures and algorithms from
 ## Algorithms
 - [X] Standard Iterators
 - [X] Binary Search
-- [ ] Bubble Sort
-- [ ] Selection Sort
-- [ ] Insertion Sort
-- [ ] Merge Sort
-- [ ] Quick Sort
+- [X] Bubble Sort
+- [X] Insertion Sort
+- [X] Selection Sort
+- [X] Merge Sort
+- [X] Quick Sort
 - [ ] Heap Sort
 - [ ] Counting Sort
 - [ ] Radix Sort
