@@ -33,10 +33,10 @@ Just a simple repository to build some common datastructures and algorithms from
 - [X] Selection Sort
 - [X] Merge Sort
 - [X] Quick Sort
-- [ ] Heap Sort
+- [X] Bucket Sort
+- [X] Heap Sort
 - [ ] Counting Sort
 - [ ] Radix Sort
-- [ ] Bucket Sort
 - [ ] Topological Sort
 - [ ] Breadth First Search
 - [ ] Depth First Search
