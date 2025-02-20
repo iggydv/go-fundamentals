@@ -35,11 +35,11 @@ Just a simple repository to build some common datastructures and algorithms from
 - [X] Quick Sort
 - [X] Bucket Sort
 - [X] Heap Sort
+- [X] Breadth First Search
+- [X] Depth First Search
 - [ ] Counting Sort
 - [ ] Radix Sort
 - [ ] Topological Sort
-- [ ] Breadth First Search
-- [ ] Depth First Search
 - [ ] Z Algorithm
 - [ ] Manacher's Algorithm
 - [ ] Dijkstra's Algorithm
