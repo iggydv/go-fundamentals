@@ -7,6 +7,7 @@ package sorting
 // new sorted list. The choice of the element to be inserted is made by a key. The key is compared with the elements of
 // the new list, and the elements are shifted accordingly.
 // It is called in-place sorting because it does not require extra space for sorting.
+// Useful
 
 func InsertionSort(arr []int) []int {
 	for unsortedIndex := 1; unsortedIndex < len(arr); unsortedIndex++ {
