@@ -7,8 +7,7 @@ import "sort"
 
 // Bucket sort is a sorting algorithm that works by distributing the elements of an array into a number of buckets.
 // Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the
-// bucket sorting algorithm.
-// It is called a distribution sort because it distributes elements of an array into a number of buckets.
+// bucket sorting algorithm. It is called a distribution sort because it distributes elements of an array into a number of buckets.
 // It is useful when input is uniformly distributed over a range.
 // It is not a comparison sort, so it is not suitable for all types of data.
 

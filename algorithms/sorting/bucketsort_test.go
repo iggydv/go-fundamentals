@@ -21,7 +21,7 @@ func TestBucketSort(t *testing.T) {
 	for _, test := range tests {
 		result := BucketSort(test.input)
 		if !reflect.DeepEqual(result, test.expected) {
-			t.Errorf("InsertionSort(%v) = %v; want %v", test.input, result, test.expected)
+			t.Errorf("BucketSort(%v) = %v; want %v", test.input, result, test.expected)
 		}
 	}
 }

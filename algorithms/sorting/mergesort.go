@@ -19,7 +19,7 @@ func MergeSort(arr []int) []int {
 }
 
 func merge(left, right []int) []int {
-	result := make([]int, 0, len(left)+len(right))
+	result := make([]int, 0)
 	l, r := 0, 0
 	for l < len(left) && r < len(right) {
 		if left[l] < right[r] {
@@ -30,6 +30,7 @@ func merge(left, right []int) []int {
 			r++
 		}
 	}
+	// any leftovers
 	result = append(result, left[l:]...)
 	result = append(result, right[r:]...)
 	return result
