@@ -1,5 +1,16 @@
 package linkedlists
 
+// Time complexity:
+// - Access: O(n)
+// - Search: O(n)
+// - Insertion: O(1)
+// - Deletion: O(1)
+
+// Space complexity: O(n)
+// Linked list are a linear data structure that stores elements in a non-contiguous manner.
+// They are useful when you need to store elements in a non-contiguous manner and when you need to perform frequent insertions and deletions.
+// since they require O(n) time to access an element, they are not suitable for applications that require frequent access to elements.
+
 type Node struct {
 	value int
 	next  *Node

@@ -1,5 +1,14 @@
 package queues
 
+// Queue represents a queue data structure - FIFO (First In First Out)
+// Time complexity:
+// - Enqueue: O(1)
+// - Dequeue: O(1)
+// - Peek: O(1)
+// - Search: O(n)
+// - Remove: O(n)
+// Space complexity: O(n)
+
 type Queue struct {
 	items []int
 }
