@@ -1,7 +1,6 @@
 package trees
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,8 +51,5 @@ func TestDeletePrefix(t *testing.T) {
 	trie.Delete("hell")
 	if !trie.Search("hello") {
 		t.Errorf("Expected to find 'hello' in the trie after deleting prefix 'hell'")
-	}
-	for char := range trie.root.children {
-		fmt.Println(string(char))
 	}
 }

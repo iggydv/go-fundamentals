@@ -1,7 +1,6 @@
 package trees
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,12 +31,11 @@ func TestNode_Insert(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			n := &Node{
-				Key:   tt.fields.Key,
+				Val:   tt.fields.Key,
 				Left:  tt.fields.Left,
 				Right: tt.fields.Right,
 			}
 			n.Insert(tt.args.val)
-			fmt.Print(n)
 		})
 	}
 }
@@ -58,14 +56,14 @@ func TestNode_Search(t *testing.T) {
 		want   bool
 	}{
 		{
-			name: "DFSPreOrder for a value",
+			name: "Search for a value",
 			fields: fields{
 				Key: 100,
 				Left: &Node{
-					Key: 50,
+					Val: 50,
 				},
 				Right: &Node{
-					Key: 150,
+					Val: 150,
 				},
 			},
 			args: args{
@@ -74,14 +72,14 @@ func TestNode_Search(t *testing.T) {
 			want: true,
 		},
 		{
-			name: "DFSPreOrder for a value that doesn't exist",
+			name: "Search for a value that doesn't exist",
 			fields: fields{
 				Key: 100,
 				Left: &Node{
-					Key: 50,
+					Val: 50,
 				},
 				Right: &Node{
-					Key: 150,
+					Val: 150,
 				},
 			},
 			args: args{
@@ -93,12 +91,12 @@ func TestNode_Search(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			n := &Node{
-				Key:   tt.fields.Key,
+				Val:   tt.fields.Key,
 				Left:  tt.fields.Left,
 				Right: tt.fields.Right,
 			}
 			if got := n.Search(tt.args.val); got != tt.want {
-				t.Errorf("DFSPreOrder() = %v, want %v", got, tt.want)
+				t.Errorf("Search(%d) = %v, want %v", tt.args.val, got, tt.want)
 			}
 		})
 	}

@@ -8,6 +8,17 @@ type Hashtable struct {
 	array []*Bucket
 }
 
+type Bucket struct {
+	Head *BucketNode
+}
+
+// Linked list
+
+type BucketNode struct {
+	Key  string
+	Next *BucketNode
+}
+
 func (h *Hashtable) Insert(key string) {
 	index := hash(key, len(h.array))
 	h.array[index].insert(key)
@@ -29,15 +40,6 @@ func hash(key string, arrayLength int) int {
 		sum += int(char)
 	}
 	return sum % arrayLength
-}
-
-type Bucket struct {
-	Head *BucketNode
-}
-
-type BucketNode struct {
-	Key  string
-	Next *BucketNode
 }
 
 // insert in head position

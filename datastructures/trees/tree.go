@@ -55,6 +55,24 @@ func (n *TreeNode) DFSPostOrder(val int) bool {
 	return false
 }
 
+func (n *TreeNode) BFS(val int) bool {
+	if n == nil {
+		return false
+	}
+	queue := []*TreeNode{n}
+	for len(queue) > 0 {
+		current := queue[0]
+		queue = queue[1:]
+		if current.Key == val {
+			return true
+		}
+		for _, child := range current.Children {
+			queue = append(queue, child)
+		}
+	}
+	return false
+}
+
 func (n *TreeNode) DFSPostOrderSlice() []int {
 	if n == nil {
 		return nil
