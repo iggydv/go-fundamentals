@@ -14,8 +14,6 @@ type CollectionIterator struct {
 	index      int
 }
 
-// Implement the interface
-
 func (it *CollectionIterator) HasNext() bool {
 	return it.index < len(it.collection.items)
 }
