@@ -10,15 +10,15 @@ package sorting
 // Useful
 
 func InsertionSort(arr []int) []int {
-	for unsortedIndex := 1; unsortedIndex < len(arr); unsortedIndex++ {
-		key := arr[unsortedIndex]
-		sortedIndex := unsortedIndex - 1
+	for i := 1; i < len(arr); i++ {
+		key := arr[i]
+		j := i - 1
 
-		for sortedIndex >= 0 && arr[sortedIndex] > key {
-			arr[sortedIndex+1] = arr[sortedIndex]
-			sortedIndex--
+		for j >= 0 && arr[j] > key {
+			arr[j+1] = arr[j]
+			j--
 		}
-		arr[sortedIndex+1] = key
+		arr[j+1] = key
 	}
 	return arr
 }

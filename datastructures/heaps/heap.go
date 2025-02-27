@@ -1,5 +1,7 @@
 package heaps
 
+// Implementing a priority queue with a hashtable
+
 type MaxHeap struct {
 	items []int
 }

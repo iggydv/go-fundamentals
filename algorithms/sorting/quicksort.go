@@ -10,6 +10,10 @@ package sorting
 // The sub-arrays are then sorted recursively. This can be done in-place, requiring small additional amounts of memory to
 // perform the sorting.
 
+func QSort(arr []int) []int {
+	return Quicksort(arr, 0, len(arr)-1)
+}
+
 func Quicksort(arr []int, start int, end int) []int {
 	if end <= start {
 		return arr

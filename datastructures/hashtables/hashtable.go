@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-// nice usecase is a priority queue
-
 type Hashtable struct {
 	array []*Bucket
 }

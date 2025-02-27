@@ -26,7 +26,7 @@ func TestQuicksort(t *testing.T) {
 	for _, test := range tests {
 		result := Quicksort(test.fields.input, test.fields.start, test.fields.end)
 		if !reflect.DeepEqual(result, test.expected) {
-			t.Errorf("MergeSort(%v) = %v; want %v", test.fields.input, result, test.expected)
+			t.Errorf("Quicksort(%v) = %v; want %v", test.fields.input, result, test.expected)
 		}
 	}
 }
