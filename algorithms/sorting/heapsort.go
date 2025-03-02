@@ -13,6 +13,7 @@ func HeapSort(arr []int) []int {
 	return arr
 }
 
+// We don't need to heapify leaf nodes, so we start from the last non-leaf node
 func buildMaxHeap(arr []int) {
 	for i := len(arr)/2 - 1; i >= 0; i-- {
 		heapifyDown(arr, i, len(arr))

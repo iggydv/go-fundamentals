@@ -97,5 +97,4 @@ func (n *BinaryTreeNode) InsertLevelOrder(val int) {
 		}
 		queue = append(queue, current.Right)
 	}
-
 }

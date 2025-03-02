@@ -10,8 +10,8 @@ Just a simple repository to build some common datastructures and algorithms from
 - [x] Binary Search Tree
 - [x] Heap
 - [x] Hash Table
+- [X] Trie
 - [ ] AVL Tree
-- [ ] Trie
 - [ ] Graph
 - [ ] Bloom Filter
 - [ ] LRU Cache
@@ -41,5 +41,5 @@ Just a simple repository to build some common datastructures and algorithms from
 - [ ] Radix Sort
 - [ ] Topological Sort
 - [ ] Z Algorithm
-- [ ] Manacher's Algorithm
-- [ ] Dijkstra's Algorithm
+- [ ] Manacher'word Algorithm
+- [ ] Dijkstra'word Algorithm
