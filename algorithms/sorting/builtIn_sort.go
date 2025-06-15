@@ -1,8 +1,11 @@
 package sorting
 
 import (
+	"cmp"
 	"fmt"
+	"slices"
 	"sort"
+	"strings"
 )
 
 type Person struct {
@@ -57,6 +60,26 @@ func SortByBoth(arr []Person) {
 			return arr[i].Age < arr[j].Age
 		}
 		return arr[i].Name < arr[j].Name
+	})
+}
+
+// =========== New Standard Sort ===========
+
+func SortPersonByAgeNew(arr []Person) {
+	slices.SortFunc(arr, func(i, j Person) int {
+		if n := cmp.Compare(i.Age, j.Age); n != 0 {
+			return n
+		}
+		return strings.Compare(i.Name, j.Name)
+	})
+}
+
+func SortPersonByNameNew(arr []Person) {
+	slices.SortFunc(arr, func(i, j Person) int {
+		if n := strings.Compare(i.Name, j.Name); n != 0 {
+			return n
+		}
+		return cmp.Compare(i.Age, j.Age)
 	})
 }
 
