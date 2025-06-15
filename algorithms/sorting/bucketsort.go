@@ -41,7 +41,6 @@ func BucketSort(nums []int) []int {
 			index = (num - minVal) * (numBuckets - 1) / (maxVal - minVal)
 		}
 		buckets[index] = append(buckets[index], num)
-
 	}
 
 	// sort individual buckets
